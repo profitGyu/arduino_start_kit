@@ -24,8 +24,8 @@
 #define ANALOG_INPUT_LENGTH 6
 
 #define POTENTION_METER_A0 0
-#define PHOTO_RESISTOR_A2 1
-#define HALL_EFFECT_A1 2
+#define PHOTO_RESISTOR_A1 1
+#define HALL_EFFECT_A2 2
 #define THEM_A3 3
 #define MIC_A4 4
 #define FLAME_A5 5
