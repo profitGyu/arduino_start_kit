@@ -35,8 +35,8 @@ void loop() {
     int potionMeter = analogRead(POTENTION_METER_A0);
     // 3. 데이터 맵핑
     int tempPotenMeter = map(potionMeter, 0 ,1023, 0, 255);
-    int photoResister = map(analogRead(PHOTO_RESISTOR_A2), 0, 1023, 0 ,255);
-    int hallEffect = analogRead(HALL_EFFECT_A1);
+    int photoResister = map(analogRead(PHOTO_RESISTOR_A1), 0, 1023, 0 ,255);
+    int hallEffect = analogRead(HALL_EFFECT_A2);
     int them = analogRead(THEM_A3);
     int mic = analogRead(MIC_A4);
     int flame = analogRead(FLAME_A5);

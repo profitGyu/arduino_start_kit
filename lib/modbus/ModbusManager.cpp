@@ -5,12 +5,16 @@ ModbusRTU mb;
 
 // 내부에서만 사용하는 레지스터 초기 등록 함수 (static)
 static void regBankInit() {
-    // 1. Coils (00001 ~ 00005)
+    // 1. Coils (00001 ~ 00008)
     mb.addCoil(0, true);
-    mb.addCoil(1, true);
+    mb.addCoil(1, false);
     mb.addCoil(2, false);
-    mb.addCoil(3, true);
-    mb.addCoil(4, true);
+    mb.addCoil(3, false);
+    mb.addCoil(4, false);
+    mb.addCoil(5, false);
+    mb.addCoil(6, false);
+    mb.addCoil(7, false);
+    mb.addCoil(8, false);
 
     // 2. Discrete Inputs (10001 ~ 10005)
     mb.addIsts(0, true);
